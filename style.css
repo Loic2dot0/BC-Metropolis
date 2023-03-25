@@ -1,0 +1,18 @@
+:root{
+    font-size: 100%;
+    --primary-color: #fff;
+    --secondary-color: #030303;
+}
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
