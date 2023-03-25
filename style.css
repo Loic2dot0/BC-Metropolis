@@ -15,4 +15,50 @@
 body{
     background-color: var(--secondary-color);
     color: var(--primary-color);
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+nav div{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.menu a, .menu-icons a{
+    padding: 0 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu-icons img{
+    height: 1.3rem;
+}
+
+section{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 33%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
