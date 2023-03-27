@@ -35,6 +35,9 @@ nav div{
     align-items: center;
 }
 
+.menu-logo{
+    flex: 1;
+}
 .menu-logo img{
     height: 100%;
 }
@@ -58,6 +61,39 @@ nav div{
     display: none;
 }
 
+.mobile-nav_checkbox:checked ~ .menu{
+    display: flex;
+}
+
+.mobile-nav_label{
+    padding: 0 1rem;
+}
+
+.mobile-nav_icon{
+    display: inline-block;
+    position: relative;
+    width: 2rem;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.mobile-nav_icon::before, .mobile-nav_icon::after{
+    display: inline-block;
+    content: '';
+    width: 2rem;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.mobile-nav_icon::before{
+    top: -0.5rem;
+}
+
+.mobile-nav_icon::after{
+    top: 0.5rem;
+}
 
 @media screen and (min-width: 980px){
     .mobile-nav_label{
