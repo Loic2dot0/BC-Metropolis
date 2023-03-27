@@ -42,11 +42,34 @@ nav div{
     height: 100%;
 }
 
+.mobile-nav_checkbox{
+    display: none;
+}
+
+.mobile-nav_checkbox:checked ~ .menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    background-color: var(--secondary-color);
+    background-color: aquamarine;
+}
+
 .menu a, .menu-icons a{
     padding: 0 1rem;
     color: var(--primary-color);
     text-decoration: none;
     font-size: 1.2rem;
+}
+
+.menu a{
+    padding: 0.5rem;
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    background-color: var(--secondary-color);
 }
     
 .menu-icons img{
@@ -55,14 +78,6 @@ nav div{
 
 .menu{
     display: none;
-}
-
-.mobile-nav_checkbox{
-    display: none;
-}
-
-.mobile-nav_checkbox:checked ~ .menu{
-    display: flex;
 }
 
 .mobile-nav_label{
