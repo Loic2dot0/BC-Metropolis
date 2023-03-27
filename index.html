@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metropolis Series</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
 </head>
 <body>
     <header>
-        <nav>
-            <input type="checkbox" id="mobile-nav" class="mobile-nav_checkbox">
+        <nav class="mobile-nav">
+            <input type="checkbox" id="mobile-nav" class="mobile-nav__checkbox">
+            <label for="mobile-nav" class="mobile-nav__label">
+                <span class="mobile-nav__icon"></span>
+            </label>  
             <div class="menu-logo">
                 <img src="assets/img/logo.png" alt="logo">
             </div>
@@ -26,9 +31,7 @@
                 <a href="#"><img src="assets/img/heart-regular.svg" alt=""></a>
                 <a href="#"><img src="assets/img/bag-shopping-solid.svg" alt=""></a>
             </div>
-            <label for="mobile-nav" class="mobile-nav_label">
-                <span class="mobile-nav_icon"></span>
-            </label>            
+                      
         </nav>        
         <h1>
             <span class="main-title">New Collection</span>
