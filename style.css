@@ -12,10 +12,6 @@
     box-sizing: border-box;
 }
 
-img{
-    max-width: 2rem;
-}
-
 body{
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -26,6 +22,34 @@ body{
     text-transform: uppercase;
     overflow: hidden;
 }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+nav div{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.menu-logo img{
+    height: 100%;
+}
+
+.menu a, .menu-icons a{
+    padding: 0 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+    
+.menu-icons img{
+    height: 1.3rem;
+}
+
 .menu{
     display: none;
 }
