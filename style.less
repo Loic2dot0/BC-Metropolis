@@ -44,6 +44,29 @@
     }
 }
 
+@keyframes titleanim{
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    95%{
+        transform: scale(1.05);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }   
+}
+
+@keyframes tovisible{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 :root{
     font-size: 100%;
 }
@@ -107,6 +130,8 @@ nav{
         order: 5;
         display: flex;
         align-items: center;
+        
+        animation: tovisible 1.5s linear 2.5s backwards;
 
         &__icon{
             margin: auto 0.5rem;
@@ -166,6 +191,8 @@ nav{
         align-items: center;
         padding-left: 0.5rem;
 
+        animation: tovisible 1.5s linear 2s backwards;
+
         span:first-child{
             font-size: 2.5rem;
         }
@@ -176,6 +203,8 @@ nav{
         display: flex;
         justify-content: flex-end;
         align-items: center;
+
+        animation: tovisible 1.5s linear 2.5s backwards;
 
         a{
             padding: 0.5rem;
@@ -193,9 +222,14 @@ header{
         font-size: 7vw;
     }
 
+    h1{
+        animation: titleanim 0.8s ease-in 0s backwards;
+    }
+
     h2{
         color:  transparent;
         -webkit-text-stroke: 0.24vw @primary-color;
+        animation: titleanim 0.8s ease-in 0.6s backwards;
     }
 }
 
@@ -218,16 +252,16 @@ section{
         }
 
         &:first-child{
-            animation: leftslide 1.5s ease-out 1.2s backwards;
+            animation: leftslide 1.5s ease-out 2.8s backwards; //délai 1.2s
         }
 
         &:nth-child(2){
             z-index: 10;
-            animation: extendpicture 1s ease-in 0.4s backwards;
+            animation: extendpicture 1s ease-in 2s backwards; //délai 0.4s
         }
 
         &:last-child{
-            animation: rightslide 1.5s ease-out 1.2s backwards;
+            animation: rightslide 1.5s ease-out 2.8s backwards; ////délai 1.2s
         }
     }
 }
@@ -262,6 +296,8 @@ section{
             width: 40%;
             transform: translate(0);
             transition: none;
+
+            animation: tovisible 1.5s linear 2.5s backwards;
             
             a{
                 font-size: 1.2rem;                 
