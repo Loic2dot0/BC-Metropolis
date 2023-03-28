@@ -64,6 +64,22 @@ nav{
                     color: @primary-color;
                 }
             }
+
+            + .button{
+                .button__icon{
+                    background-color: transparent;
+
+                    &::before{
+                        top: 0;
+                        transform: rotate(135deg);
+                    }
+
+                    &::after{
+                        top: 0;
+                        transform: rotate(-135deg);
+                    }
+                }
+            }
         }
     }
 
