@@ -201,3 +201,40 @@ section{
         }
     }
 }
+
+@media screen and (min-width: 980px) {
+    svg{
+        height: 1.2rem
+    }
+
+    nav{
+        .button{
+            display: none;
+        }
+    
+        .menu{
+            position: static;
+            flex-direction: row;                
+            width: 40%;
+            transform: translate(0);
+            transition: none;
+            
+            a{
+                font-size: 1.2rem;                 
+            }
+        }
+    
+        .logo{
+            padding:  0.5rem;
+        }
+    
+        .menu-icons{
+            width: 40%;
+            align-items: start;
+
+            a{
+                margin-top: 0.5rem
+            }
+        }
+    }
+}
