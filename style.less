@@ -40,13 +40,65 @@ body{
     font-family: 'kanit-semibold';	
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+
+    .checkbox{
+        display: none;
+    }
+
+    .button{
+        order: 5;
+        display: flex;
+        align-items: center;
+
+        &__icon{
+            margin: auto 0.5rem;
+            width: 2rem;
+            height: 3px;
+            border-radius: 2px;
+            background-color: @primary-color;
+        }        
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .logo{
+        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span:first-child{
+            font-size: 2.5rem;
+        }
+    }
+
+    .menu-icons{
+        background-color: green;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        a{
+            padding: 0.5rem;
+            margin: auto 0.5rem;
+        }
+    }
+}
+
 header{
     margin-top: 2rem;
     text-align: center;
     font-family: 'kanit-bold';
 
     h1, h2{
-        //font-size: 6rem;
         font-size: 7vw;
     }
 
