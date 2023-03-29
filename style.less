@@ -40,11 +40,9 @@
         opacity: 0;
         width: 0%;        
     }
-    10%{
-        opacity: 1;
-    }
     100%{
         width: 33%;
+        opacity: 1;
     }
 }
 
@@ -57,7 +55,7 @@
         transform: scale(1);
     }
     95%{
-        transform: scale(1.05);
+        transform: scale(1.02);
     }
     100%{
         transform: translateY(0);
@@ -206,7 +204,7 @@ nav{
         align-items: center;
         padding-left: 0.5rem;
 
-        animation: tovisible 1.5s linear 2s backwards;
+        animation: tovisible 1.5s linear 0.8s backwards;
 
         span:first-child{
             font-size: 2.5rem;
@@ -219,7 +217,7 @@ nav{
         justify-content: flex-end;
         align-items: center;
 
-        animation: tovisible 1.5s linear 2.5s backwards;
+        animation: tovisible 1.5s linear 1.3s backwards;
 
         a{
             padding: 0.5rem;
@@ -286,16 +284,16 @@ section{
         }
 
         &:first-child{
-            animation: leftslide 1.5s ease-out 1.8s backwards; //délai 1.2s / 2.8
+            animation: leftslide 1.5s ease-out 1.6s backwards; //délai 1.2s / 2.8
         }
 
         &:nth-child(2){
             z-index: 10;
-            animation: extendpicture 1s ease-in 1s backwards; //délai 0.4s / 2s
+            animation: extendpicture 1s ease-in 0.8s backwards; //délai 0.4s / 2s
         }
 
         &:last-child{
-            animation: rightslide 1.5s ease-out 1.8s backwards; ////délai 1.2s / 2.8s
+            animation: rightslide 1.5s ease-out 1.6s backwards; //délai 1.2s / 2.8s
         }
     }
 }
@@ -331,7 +329,7 @@ section{
             transform: translate(0);
             transition: none;
 
-            animation: tovisible 1.5s linear 2.5s backwards;
+            animation: tovisible 1.5s linear 1.3s backwards;
             
             a{
                 font-size: 1.2rem;                 
