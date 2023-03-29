@@ -46,15 +46,19 @@
 
 @keyframes titleanim{
     0%{
+        transform: translateY(100%);
         opacity: 0;
-        transform: scale(0.5);
+    }
+    90%{
+        transform: scale(1);
     }
     95%{
         transform: scale(1.05);
     }
     100%{
-        opacity: 1;
+        transform: translateY(0);
         transform: scale(1);
+        opacity: 1;
     }   
 }
 
