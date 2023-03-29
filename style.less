@@ -37,7 +37,11 @@
 
 @keyframes extendpicture {
     0%{
+        opacity: 0;
         width: 0%;        
+    }
+    10%{
+        opacity: 1;
     }
     100%{
         width: 33%;
@@ -185,6 +189,12 @@ nav{
             font-size: 1.5rem;                    
             text-decoration: none;
             color: @primary-color;
+            transition: transform 0.4s ease-in-out;
+            will-change: transform;
+
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
 
@@ -214,6 +224,16 @@ nav{
         a{
             padding: 0.5rem;
             margin: auto 0.5rem;
+
+            svg{
+                transition: transform 0.4s ease-in-out;
+            }
+
+            &:hover{
+                svg{
+                    transform: scale(1.2);
+                }
+            }
         }
     }
 }
@@ -225,16 +245,25 @@ header{
 
     h1, h2{
         font-size: 7vw;
+        overflow: hidden;
     }
 
     h1{
-        animation: titleanim 0.8s ease-in 0s backwards;
+        span{
+            display: inline-block;
+            animation: titleanim 0.8s ease-in 0s backwards;
+        }
     }
 
     h2{
         color:  transparent;
         -webkit-text-stroke: 0.24vw @primary-color;
-        animation: titleanim 0.8s ease-in 0.6s backwards;
+        
+
+        span{
+            display: inline-block;
+            animation: titleanim 0.8s ease-in 0.6s backwards;
+        }
     }
 }
 
@@ -257,16 +286,16 @@ section{
         }
 
         &:first-child{
-            animation: leftslide 1.5s ease-out 2.8s backwards; //délai 1.2s
+            animation: leftslide 1.5s ease-out 1.8s backwards; //délai 1.2s / 2.8
         }
 
         &:nth-child(2){
             z-index: 10;
-            animation: extendpicture 1s ease-in 2s backwards; //délai 0.4s
+            animation: extendpicture 1s ease-in 1s backwards; //délai 0.4s / 2s
         }
 
         &:last-child{
-            animation: rightslide 1.5s ease-out 2.8s backwards; ////délai 1.2s
+            animation: rightslide 1.5s ease-out 1.8s backwards; ////délai 1.2s / 2.8s
         }
     }
 }
